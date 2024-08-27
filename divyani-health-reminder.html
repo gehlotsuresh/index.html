@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Reminder for Divyani</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Comfortaa', cursive;
+            background-color: #fce4ec;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff0f5;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 80%;
+            position: relative;
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: #8e24aa;
+            line-height: 1.6;
+            font-size: 1.2rem;
+        }
+        .emoji {
+            font-size: 3rem;
+            margin: 1rem 0;
+        }
+        .button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #ff1493;
+        }
+        .surprise {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ff69b4;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+        #surpriseCheckbox {
+            display: none;
+        }
+        #surpriseCheckbox:checked ~ .surprise {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hey Divyani! 💖</h1>
+        <p>Just a sweet little reminder for you:</p>
+        <div class="emoji">🍽️</div>
+        <p>Please remember to eat your yummy meals on time!</p>
+        <div class="emoji">😴</div>
+        <p>And don't forget to get enough beauty sleep every night!</p>
+        <p>Your health and happiness mean the world to me! 🌟</p>
+        <input type="checkbox" id="surpriseCheckbox">
+        <label for="surpriseCheckbox" class="button">Click for a surprise!</label>
+        <div class="surprise">
+            <p>You're amazing, Divyani! Take care of yourself! 😊</p>
+            <label for="surpriseCheckbox" class="button">Close</label>
+        </div>
+    </div>
+</body>
+</html>
